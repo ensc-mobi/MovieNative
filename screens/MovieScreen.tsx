@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
 import MovieList from "../components/MovieList";
-import movieService, { Movie } from "../services/movie.service";
+import Movie from "../services/movie.model";
+import movieService from "../services/movie.service";
 
 interface MovieScreenState {
   movies: Array<Movie>;

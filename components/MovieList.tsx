@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Text } from "react-native";
 import { StyleSheet, FlatList } from "react-native";
-import { Movie } from "../services/movie.service";
+import Movie from "../services/movie.model";
 
 interface MovieListProps {
   movies: Array<Movie>;
@@ -16,7 +16,7 @@ export default class MovieList extends Component<MovieListProps, {}> {
         keyExtractor={(movie) => movie.id.toString()}
         renderItem={({ item }: { item: Movie }) => (
           <Text>
-            {item.title} ({item.releaseDate})
+            {item.title} ({item.releaseDate.getFullYear()})
           </Text>
         )}
       />
