@@ -1,5 +1,5 @@
 # MovieNative
 
-Basic example demonstrating how to fetch an API in a React Native application.
+Basic React Native app demonstrating how to fetch an API created with ASP.NET Core MVC.
 
 Uses data from [this website](https://enscmovie.azurewebsites.net/Movies).
